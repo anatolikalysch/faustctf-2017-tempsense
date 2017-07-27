@@ -1,0 +1,15 @@
+[Unit]
+Description=FAUST CTF tempsense service
+
+[Service]
+ExecStart=/srv/tempsense/ServiceLogic.py
+WorkingDirectory=/srv/tempsense
+User=tempsense
+CPUAccounting=yes
+CPUQuota=70%
+MemoryAccounting=yes
+MemoryLimit=100M
+LimitNPROC=100
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,19 @@
+name: tempsense 
+author:
+  - Anatoli Kalysch <anatoli.kalysch@fau.de>
+packages:
+  - build-essential
+  - autoconf
+  - g++
+  - python3-dev 
+  - cython3
+
+checker:
+  module: tempsense
+  class: TempSenseChecker
+  packages:
+    - build-essential
+    - autoconf
+    - g++
+    - python3-dev
+
